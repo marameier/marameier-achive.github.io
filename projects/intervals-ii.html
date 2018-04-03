@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Michael Hemingway">
+		<meta name="theme-color" content="#3b444c">
+
+		<meta property="og:url" content="https://michaelhemingway.com/">
+		<meta property="og:title" content="Intervals II">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="/assets/img/work/covers/">
+
+		<meta name="twitter:url" content="https://michaelhemingway.com/">
+		<meta name="twitter:site" content="@mikemingway">
+
+		<meta name="pinterest" content="nopin" description="Nah. Don't even try with that bullshit.">
+
+		<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="/assets/css/style.css?1522786295913">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<title>Intervals II</title>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-98349428-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</head>
+<body><div id="transitioner"></div>
+
+<nav id="nav-main">
+	<div id="nav-home-icon">
+		<a href="/">
+			<br>
+			mh<br>
+			░░░
+		</a>
+	</div>
+	<div id="nav-inner">
+		<ul class="nav-list-container">
+			<li class="nav-list-item">
+				<a href="/">
+					<i class="icon-home"></i>
+					<p class="nav-link-text">Home</p>
+				</a>
+			</li>
+			<li class="nav-list-item">
+				<a href="/projects">
+					<i class="icon-work"></i>
+					<p class="nav-link-text">Works</p>
+				</a>
+			</li>
+			<li class="nav-list-item">
+				<a href="/collection">
+					<i class="icon-blog"></i>
+					<p class="nav-link-text">Collection</p>
+				</a>
+			</li>
+			<li class="nav-list-item">
+				<a href="/about">
+					<i class="icon-about" style="margin-left: -7%;"></i>
+					<p class="nav-link-text">About</p>
+				</a>
+			</li>
+			<li class="nav-list-item">
+				<a href="/contact">
+					<i class="icon-contact"></i>
+					<p class="nav-link-text">Contact</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="nav-toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<div id="nav-social">
+		<ul class="nav-social-container">
+
+			<li class="nav-social-link">
+				<a href="https://www.facebook.com/MichaelHemingwayPhoto/">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+
+			<li class="nav-social-link">
+				<a href="https://www.instagram.com/stockhuman/">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</li>
+
+			<li class="nav-social-link">
+				<a href="https://twitter.com/stockhuman">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+
+			<li class="nav-social-link">
+				<a href="https://www.behance.net/stockhuman">
+					<i class="fa fa-behance"></i>
+				</a>
+			</li>
+
+			<li class="nav-social-link">
+				<a href="https://soundcloud.com/stockhuman">
+					<i class="fa fa-soundcloud"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div id="container" class="container"><main id="content" class="page"><header class="cover">
+	<canvas id="canvas"></canvas>
+	 
+
+		<nav class="project-nav"> 
+
+		
+				<a href="/projects/opcm" class="project-nav-prev">
+					The OPCM
+				</a>
+			
+				<a href="/projects/?cat=web" class="project-nav-cat">web</a>
+				<a href="/projects/?year=2016" class="project-nav-year">2016</a>
+			
+				<a href="/projects/campaign-trail" class="project-nav-next">
+					Campaign Trail
+				</a>
+			
+
+		</nav> 
+
+</header>
+<article class="page">
+		<h1 class="page-title">intervals II</h1>
+		<p>A little collection of reaction-diffusion experiementation, with just a few shots of Processing code on the side.</p>
+
+		<figure>
+			<img src="/assets/img/work/intervals/1.jpg" alt="Looping 00">
+			<img src="/assets/img/work/intervals/2.jpg" alt="Looping 00">
+			<img src="/assets/img/work/intervals/3.jpg" alt="Looping 00">
+			<img src="/assets/img/work/intervals/4.jpg" alt="Looping 00">
+			<img src="/assets/img/work/intervals/5.jpg" alt="Looping 00">
+			<img src="/assets/img/work/intervals/6.jpg" alt="Looping 00">
+		</figure>
+
+		<p>By the time you scrolled here, something cool should've happened up <a href="#">top</a>!</p>
+		
+	</article>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var dipRect = canvas.getBoundingClientRect();
+
+var c = {}
+var cw = canvas.width = Math.round(devicePixelRatio * dipRect.right)
+								- Math.round(devicePixelRatio * dipRect.left);;
+c.x = cw / 2;
+var ch = canvas.height = Math.round(devicePixelRatio * dipRect.bottom)
+								- Math.round(devicePixelRatio * dipRect.top);
+
+canvas.style.width = "100%";
+canvas.style.height = "100%";
+c.y = ch / 2;
+
+var frames = 0
+var rad = Math.PI / 180;
+
+var grid = [];
+var next = [];
+var t = 1;
+// diffusion vars
+var dA = .8;
+var dB = .35;
+var feed = .055,
+	k = .062; // k == kill rate
+
+for (var x = 0; x < cw; x += 1) {
+	grid[x] = [];
+	next[x] = [];
+	for (var y = 0; y < ch; y += 1) {
+		grid[x][y] = [];
+		grid[x][y][0] = 1;
+		grid[x][y][1] = 0;
+
+		next[x][y] = [];
+		next[x][y][0] = 1;
+		next[x][y][1] = 0;
+	}
+}
+
+function Seed() {
+ /* var seed = {
+		x: randomIntFromInterval(20, cw-20),
+		y: randomIntFromInterval(20, cw-20)
+	}
+	console.log(seed)
+	for (var i = seed.x; i < seed.x + 10; i += 1) {
+		for (var j = seed.y; j < seed.y + 10; j += 1) {
+			if(grid[i][j]){grid[i][j][1] = 1;}
+		}
+	}
+	*/
+ 
+	for( var i = 0; i < 360; i+=15){
+		for(var j = 40; j < 50; j++){
+		var x = ~~(c.x + j*Math.cos(i*rad));
+		var y = ~~(c.y + j*Math.sin(i*rad));
+		grid[x][y][1] = 1;
+	}
+}
+ /* 
+ var n = 3;
+for(var i= 0; i< 1260;i++){
+	var t = i*rad;
+	r =  n * t;
+	x = ~~(c.x + r*Math.cos(t));
+	y = ~~(c.y + r*Math.sin(t));
+	grid[x][y][1] = 1;
+} 
+*/ 
+}
+
+for (var r = 0; r < 5; r++) {
+	Seed();
+}
+
+function Draw() {
+	requestId = window.requestAnimationFrame(Draw);
+	frames++;
+
+	for (var x = 1; x < cw - 1; x += 1) {
+		for (var y = 1; y < ch - 1; y += 1) {
+		
+			var a = grid[x][y][0];
+			var b = grid[x][y][1];
+			next[x][y][0] = (a + (dA * laplace(x, y, 0)) - (a * b * b) + (feed * (1 - a))) * t;
+			next[x][y][1] = (b + (dB * laplace(x, y, 1)) + (a * b * b) - ((k + feed) * b)) * t;
+		 
+		}
+	
+	}
+
+	var imgData = ctx.createImageData(cw, ch);
+	var pixels = imgData.data;
+	for (var x = 1; x < cw - 1; x += 1) {
+		for (var y = 1; y < ch - 1; y += 1) {
+			var a = next[x][y][0];
+			var b = next[x][y][1];
+			var d = ~~((a - b) * 255);
+
+			var red = normalizeColor(55 - d);
+			var green = normalizeColor(155 - d);
+			var blue = normalizeColor(255 - d);
+
+			var pix = (x + y * cw) * 4;
+			pixels[pix + 0] = red;
+			pixels[pix + 1] = green;
+			pixels[pix + 2] = blue;
+			pixels[pix + 3] = 255;
+		}
+	}
+	ctx.putImageData(imgData, 0, 0);
+
+	swap();
+
+}
+
+requestId = window.requestAnimationFrame(Draw);
+
+function swap() {
+	var temp = grid;
+	grid = next;
+	next = temp;
+}
+
+function laplace(x, y, zo) {
+	/*
+	|.05 |.2|.05|
+	| .2 |-1| .2|
+	|.05 |.2|.05|
+	*/
+
+	var m = .2;
+	var r = .05;
+	var sum = 0;
+	sum += grid[x][y][zo] * -1; // the center
+	sum += grid[x - 1][y][zo] * m; // to the left
+	sum += grid[x + 1][y][zo] * m; // to the right
+	sum += grid[x][y + 1][zo] * m; // above
+	sum += grid[x][y - 1][zo] * m; // below
+	sum += grid[x - 1][y - 1][zo] * r; // top left
+	sum += grid[x + 1][y - 1][zo] * r; // top right
+	sum += grid[x - 1][y + 1][zo] * r; // bottom left
+	sum += grid[x + 1][y + 1][zo] * r; // bottom right
+
+	return sum;
+}
+
+function normalizeColor(c) {
+	if (c < 0) {
+		return 0;
+	} else if (c > 255) {
+		return 255;
+	} else {
+		return ~~c
+	}
+}
+
+function randomIntFromInterval(mn, mx) {
+	return ~~(Math.random() * (mx - mn + 1) + mn);
+}
+
+</script>	<footer>
+		
+		<div class="colophon">
+			<p><a href="/about">Michael Hemingway</a> © 2017</p>
+			<p>It's all in the nav, man.<br><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+		</div>
+		<p style="font-family: monospace;"><a href="https://twitter.com/StockHuman">Twitter</a> * <a href="https://www.instagram.com/fromaggio/">Instagram</a> * <a href="https://github.com/stockhuman">Github</a></p>
+	</footer>
+</main></div><script src="/assets/js/lib/jquery-3.1.1-modified.min.js"></script>
+<script src="/assets/js/lib/smoothState.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+<script src="/assets/js/lib/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+<script src="/assets/js/app.min.js?ver=1522786295914"></script>
+</body>

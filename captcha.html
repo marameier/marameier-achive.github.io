@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Select all the squares that match">
+		<meta name="author" content="Michael Hemingway">
+		<meta name="theme-color" content="#3b444c">
+
+		<meta property="og:url" content="https://michaelhemingway.com/">
+		<meta property="og:title" content="Captcha">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="Select all the squares that match">
+		<meta property="og:image" content="/assets/img/work/covers/default.png">
+
+		<meta name="twitter:url" content="https://michaelhemingway.com/">
+		<meta name="twitter:site" content="@mikemingway">
+
+		<meta name="pinterest" content="nopin" description="Nah. Don't even try with that bullshit.">
+
+		<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="/assets/css/style.css?1522786295698">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<title>Captcha</title>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-98349428-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</head>
+<body><div id="transitioner"></div>
+
+<nav id="nav-main">
+	<div id="nav-home-icon">
+		<a href="/">
+			<br>
+			mh<br>
+			░░░
+		</a>
+	</div>
+	<div id="nav-inner">
+		<ul class="nav-list-container">
+			<li class="nav-list-item">
+				<a href="/">
+					<i class="icon-home"></i>
+					<p class="nav-link-text">Home</p>
+				</a>
+			</li>
+			<li class="nav-list-item">
+				<a href="/projects">
+					<i class="icon-work"></i>
+					<p class="nav-link-text">Works</p>
+				</a>
+			</li>
+			<li class="nav-list-item">
+				<a href="/collection">
+					<i class="icon-blog"></i>
+					<p class="nav-link-text">Collection</p>
+				</a>
+			</li>
+			<li class="nav-list-item">
+				<a href="/about">
+					<i class="icon-about" style="margin-left: -7%;"></i>
+					<p class="nav-link-text">About</p>
+				</a>
+			</li>
+			<li class="nav-list-item">
+				<a href="/contact">
+					<i class="icon-contact"></i>
+					<p class="nav-link-text">Contact</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="nav-toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<div id="nav-social">
+		<ul class="nav-social-container">
+
+			<li class="nav-social-link">
+				<a href="https://www.facebook.com/MichaelHemingwayPhoto/">
+					<i class="fa fa-facebook"></i>
+				</a>
+			</li>
+
+			<li class="nav-social-link">
+				<a href="https://www.instagram.com/stockhuman/">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</li>
+
+			<li class="nav-social-link">
+				<a href="https://twitter.com/stockhuman">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+
+			<li class="nav-social-link">
+				<a href="https://www.behance.net/stockhuman">
+					<i class="fa fa-behance"></i>
+				</a>
+			</li>
+
+			<li class="nav-social-link">
+				<a href="https://soundcloud.com/stockhuman">
+					<i class="fa fa-soundcloud"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div id="container" class="container"><main id="content" class="page">
+
+<header class="cover">
+	<div style="min-height: 800px; background: white">
+		<div class="top">
+			<span id="text">Select all the squares with</span>
+		</div>
+		<div id="bg"></div>
+		<div id="verify">
+			<button class="verify">VERIFY</button>
+		</div>
+	</div>
+
+</header>
+<article class="page" data-base="#2196F3" data-highlight="#ffffff">
+	<input type="text" id="goog-target-acquired" placeholder="What are we looking for?" onchange="updateText()" onkeyup="this.onchange()">
+	<input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple="multiple">
+	<label for="file">Choose a file</label>
+<hr>
+	
+	<figure>
+		<img src="https://i.reddituploads.com/b26cabfe279a45bebf1c5faedd5482b3?fit=max&h=1536&w=1536&s=c5074ede0fa107063f080ef438ba7557" alt="">
+		<figcaption>This was almost entirely inspired by this meme</figcaption>
+	</figure>
+</article>
+</main>
+<script>
+
+var srcTxt = document.getElementById("goog-target-acquired");
+		targetTxt = document.getElementById("text");
+
+function updateText () {
+	targetTxt.innerHTML = 'Select all the squares with ' +srcTxt.value;
+}
+
+window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+    if (this.files && this.files[0]) {
+      document.getElementById("bg").style =
+      'background-image: url(' + URL.createObjectURL(this.files[0]) +')';
+    }
+  });
+});
+
+var inputs = document.querySelectorAll( '.inputfile' );
+Array.prototype.forEach.call( inputs, function( input )
+{
+	var label	 = input.nextElementSibling,
+		labelVal = label.innerHTML;
+
+	input.addEventListener( 'change', function( e )
+	{
+		var fileName = '';
+		if( this.files && this.files.length > 1 )
+			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+		else
+			fileName = e.target.value.split( '\\' ).pop();
+
+		if( fileName )
+			label.querySelector( 'span' ).innerHTML = fileName;
+		else
+			label.innerHTML = labelVal;
+	});
+});
+
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+	.top {
+		margin: 0 auto;
+		background: #2196F3;
+		color: white;
+		width: 500px;
+		height: 140px;
+		margin-bottom: 10px;
+		font-family: 'Roboto', sans-serif;
+	}
+	#text {
+		padding: 1.2em;
+		display: block;
+		font-weight: bold;
+		font-size: 1.45em;
+	}
+	#bg {
+		margin: 0 auto;
+		width: 500px;
+		height: 539px;
+		background-size: cover;
+		background-position: center center;
+		position: relative;
+	}
+	#bg:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  background: linear-gradient(to bottom, #fff 3px, transparent 3px), linear-gradient(to right, #fff 3px, transparent 3px);
+  background-size: 25%;
+  margin-left: -3px;
+  padding: 1px;
+}
+#verify {
+	margin: 1em auto;
+	width: 500px;
+}
+.verify {
+	float: right;
+	background-color: #2196F3;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	padding: .8em 2em .8em 2em;
+}
+	.inputfile {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+	.inputfile + label {
+	    font-size: .7em;
+	    font-weight: 700;
+	    color: white;
+	    padding: 12px 24px;
+	    background-color: #2196F3;
+	    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+	    border-radius: 2px;
+	    display: inline-block;
+	    cursor: pointer;
+	}
+
+	.inputfile:focus + label,
+	.inputfile + label:hover {
+	    background-color: #6ab7ff;
+	}
+	.inputfile:focus + label {
+		outline: 1px solid #005cb2;
+		outline: -webkit-focus-ring-color auto 5px;
+	}
+</style>	<footer>
+		
+		<div class="colophon">
+			<p><a href="/about">Michael Hemingway</a> © 2017</p>
+			<p>It's all in the nav, man.<br><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
+		</div>
+		<p style="font-family: monospace;"><a href="https://twitter.com/StockHuman">Twitter</a> * <a href="https://www.instagram.com/fromaggio/">Instagram</a> * <a href="https://github.com/stockhuman">Github</a></p>
+	</footer>
+</div><script src="/assets/js/lib/jquery-3.1.1-modified.min.js"></script>
+<script src="/assets/js/lib/smoothState.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+<script src="/assets/js/lib/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+<script src="/assets/js/app.min.js?ver=1522786295700"></script>
+</body>
