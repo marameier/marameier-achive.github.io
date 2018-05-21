@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="referrer" content="origin">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="This is Mara Meier&#39;s personal site, and a repository for all those collected digital ideosyncracies.">
@@ -18,7 +19,7 @@
 		<meta name="twitter:site" content="stay tuned!">
 
 		<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-		<link rel="stylesheet" href="/assets/css/style.css?1524669705681">
+		<link rel="stylesheet" href="/assets/css/style.css?1526926851517">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 		<title>MM</title>
@@ -76,6 +77,12 @@
 					<p class="nav-link-text">Contact</p>
 				</a>
 			</li>
+			<!--<li class="nav-list-item">
+				<a href="/ecal">
+					<i class="icon-homework"></i>
+					<p class="nav-link-text">Homework</p>
+				</a>
+			</li> -->
 		</ul>
 	</div>
 
@@ -124,13 +131,22 @@
 	</div>
 </nav>
 <div id="container" class="container"><main id="content" class="home" id="home">
-		<section class="header">
-				<h1>Mara Meier</h1>
-				<p>
-					<span class="desc" id="phrase">...</span> ░ <span class="byline"> multidiciplinary artist ░</span> 
-					<!-- <a href="https://twitter.com/StockHuman">@stockhuman</a> -->
-				</p>
-			</section>
+	<section class="header">
+		<h1>Mara Meier</h1>
+		<p>
+			<span class="desc" id="phrase">...</span> ░ <span class="byline"> multidiciplinary artist ░</span> 
+			<!-- <a href="https://twitter.com/StockHuman">@stockhuman</a> -->
+		</p>
+	</section>
+	<br>
+	<div class="row-full">
+		<article class="headsup" data-highlight="#000">
+			<p headsup>
+				If you are looking for my homework assignment for the 2018 <a href="http://www.ecal.ch/en/1084/studies/bachelor/fine-arts/presentation">bachelor of fine arts</a>' admission process of <a href="http://www.ecal.ch/en/100/homepage">&#233;cal</a>, go <a href="/ecal">here</a>.
+			</p>
+		</article>
+	</div>
+	<br>
 	<section id="center-network" class="network" style="position: relative; left: 10%; max-width: 80%">
 				<a href="/projects/concept" class="home-item">
 						<div class="">
@@ -266,6 +282,25 @@
 			document.getElementById('phrase').innerHTML = '... ' + phrase;
 		}())
 	</script>
+
+	<style type="text/css">
+		article.headsup p {
+			padding: 0 5rem 0 5rem;
+			line-height: 1.5;
+			font-size: 1.2727272727rem;
+			background: rgb(145, 0, 0);
+			color: white !important;
+		}
+		.row-full{
+			width: 100vw;
+			position: relative;
+			margin-left: -50vw;
+			height: 100px;
+			margin-top: 100px;
+			left: 50%;
+		   }
+	</style>
+	
 </main>	<footer>
 		
 		<div class="colophon">
@@ -280,5 +315,5 @@
 <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 <script src="/assets/js/lib/isotope.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
-<script src="/assets/js/app.min.js?ver=1524669705682"></script>
+<script src="/assets/js/app.min.js?ver=1526926851522"></script>
 </body>
